@@ -14,11 +14,11 @@ require "./thinkable"
 class Human < Animal
     include Thinkable
     #Thinkableをmixin
-     attr_accessor :name, :age, :syumi
+     attr_accessor :syumi
     def initialize(name2, age2, syumi)
-    # super(self.name, self.age)
-    self.name = name2
-    self.age = age2
+    super(name2, age2)
+    # self.name = name2
+    # self.age = age2
     self.syumi = syumi
     end
 end
